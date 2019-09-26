@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game Learning</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <br>
+        <p>Random number between 1 to 100 is generated at the start of game. So you have to guess the number in 10 chances.
+            Also there is info about your previous guesses as well if the guess is low or high.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <label for="guessField">Enter a Guess</label>
+            <input type="text" placeholder="Number b/w 1 to 100" class = "guessField" id= "guessField" />
+            <input type="submit" value="Submit Guess" class="guessSubmit">
+            <p class="errorMessage"></p>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="resultPara">
+                <p class="guesses"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="JS/app.js"></script>
+</body>
+</html>
